@@ -1,0 +1,38 @@
+<p><a href="index.html">Go back</a></p>
+  
+<form class="form">
+  <label>
+    Delay (ms)
+    <input class="input-delay" type="number" name="delay" required />
+  </label>
+
+  <fieldset class="fieldset">
+    <legend>State</legend>
+    <label>
+      <input
+        class="visually-hidden"
+        type="radio"
+        name="state"
+        value="fulfilled"
+        required
+      />
+      <span class="radio-btn"></span>
+      Fulfilled
+    </label>
+    <label>
+      <input
+        class="visually-hidden"
+        type="radio"
+        name="state"
+        value="rejected"
+        required
+      />
+      <span class="radio-btn"></span>
+      Rejected
+    </label>
+  </fieldset>
+
+  <button class="form-btn" type="submit">Create notification</button>
+</form>
+
+<script type="module" src="./js/2-snackbar.js"></script>
