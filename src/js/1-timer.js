@@ -57,8 +57,6 @@ refs.startBtn.addEventListener('click', elem => {
     const timeValue = convertMs(diff);
     if (diff <= 0) {
       clearInterval(timer);
-      refs.startBtn.disabled = true;
-      refs.startBtn.classList.remove('disabled');
       refs.dateInput.disabled = false;
       refs.dateInput.classList.remove('disabled');
     } else {
